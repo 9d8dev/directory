@@ -6,7 +6,14 @@ export const boho = bohoAuth({
   expiresIn: "1h",
   middleware: {
     loginPath: "/admin/login",
-    protectedPaths: ["/admin", "/admin/basic", "/admin/manage"],
+    protectedPaths: [
+      "/admin",
+      "/admin/basic",
+      "/admin/manage",
+      "/api/bookmarks",
+      "/api/generate",
+      "/api/metadata",
+    ],
     redirectPath: "/admin",
   },
 });
