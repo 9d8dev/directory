@@ -30,15 +30,20 @@ export default function AdminLogin() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ password: password }),
+        body: JSON.stringify({ password: password.trim() }),
       });
 
-      const data = await response.json();
-
-      if (response.ok && data.success) {
+      if (response.ok) {
+        // If response is OK, redirect regardless of response body
         router.push("/admin");
-      } else {
+        return;
+      }
+
+      try {
+        const data = await response.json();
         setError(data.error || "Invalid password. Please try again.");
+      } catch {
+        setError("Invalid password. Please try again.");
       }
     } catch (error) {
       console.error("Authentication error:", error);
