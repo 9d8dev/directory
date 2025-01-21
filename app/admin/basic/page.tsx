@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import AdminHeader from "../components/admin-header";
+import AdminHeader from "../admin/admin-header";
 
 export default function AdminPage() {
   const [formData, setFormData] = useState({

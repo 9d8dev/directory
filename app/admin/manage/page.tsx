@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import AdminHeader from "../components/admin-header";
+import AdminHeader from "../admin/admin-header";
 import Link from "next/link";
 
 interface Bookmark {
