@@ -30,7 +30,7 @@ export default function AdminLogin() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ password: password.trim() }),
+        body: JSON.stringify({ password: password }),
       });
 
       const data = await response.json();

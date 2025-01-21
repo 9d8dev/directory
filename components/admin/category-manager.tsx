@@ -7,7 +7,7 @@ import {
   updateCategory,
   deleteCategory,
   ActionState,
-} from "../actions";
+} from "@/lib/actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";

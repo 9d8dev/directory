@@ -37,7 +37,7 @@ import {
   generateContent,
   bulkUploadBookmarks,
   type ActionState,
-} from "../actions";
+} from "@/lib/actions";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Plus, Upload, Loader2, Trash2 } from "lucide-react";

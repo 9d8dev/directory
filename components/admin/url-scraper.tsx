@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { ResultDisplay } from "./result-display";
-import { scrapeUrl } from "../actions";
+import { scrapeUrl } from "@/lib/actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import type { ActionState } from "../actions";
+import type { ActionState } from "@/lib/actions";
 
 export function URLScraper() {
   const [url, setUrl] = useState("");
